@@ -1,0 +1,13 @@
+:root { --bg: #f7f4ee; --ink: #14213d; --muted: #5b6475; --accent: #e8a33d; }
+@media (prefers-color-scheme: dark) { :root { --bg: #0f1626; --ink: #eef1f6; --muted: #a3acbd; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "Noto Sans KR", "Malgun Gothic", system-ui, sans-serif; }
+main { max-width: 1100px; margin: 0 auto; padding: 32px 16px 48px; }
+.series { margin: 0 0 8px; color: var(--accent); font-weight: 700; font-size: 14px; }
+h1 { margin: 0 0 6px; font-size: clamp(22px, 4vw, 34px); line-height: 1.3; }
+.sub { margin: 0 0 20px; color: var(--muted); }
+video { width: 100%; aspect-ratio: 16 / 9; background: #000; border-radius: 10px; }
+.note { margin: 14px 0 0; color: var(--muted); font-size: 13px; }
+nav { margin-top: 24px; }
+a { color: var(--ink); font-weight: 700; }
